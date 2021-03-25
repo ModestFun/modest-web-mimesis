@@ -1,0 +1,65 @@
+body {
+  background-size: 100% 100%;
+  background-image: url("https://www.modestfun.com/static/media/bg.40524271.png");
+}
+
+.background-cover {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #f1f1f1, $alpha: 0.6);
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba($color: white, $alpha: 0.7);
+  position: fixed;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ff6700;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 5px;
+    width: 180px;
+    cursor: pointer;
+    transition: 0.3s all linear;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #ff6700;
+      margin-left: 10px;
+      height: 35px;
+      line-height: 35px;
+    }
+
+    .detail {
+      width: 0px;
+      height: 0px;
+      text-align: center;
+      position: absolute;
+      top: 60px;
+      border-radius: 5px;
+      color: rgba($color: #000000, $alpha: 0.5);
+      font-size: 14px;
+      background-color: rgba($color: white, $alpha: 0.7);
+      transition: 0.2s all linear;
+      overflow: hidden;
+    }
+  }
+
+  .logo:hover {
+    .detail {
+      width: 180px;
+      height: 50px;
+    }
+  }
+}
